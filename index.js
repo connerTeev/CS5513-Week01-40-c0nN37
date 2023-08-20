@@ -5,7 +5,7 @@ let myServer = myHttp.createServer(
     console.log(myRequest.url);
 
     let myText;
-    if (myRequest.url === '/treasure'){
+    if (myRequest.url === '/password'){
       myText = "<span style='font-size:100px;'>&#128142;</span>";
     } else {
       myText = "<h1>Can you find the treasure?</h1>"
@@ -19,4 +19,4 @@ let myServer = myHttp.createServer(
 
 myServer.listen(8080, "0.0.0.0");
 
-console.log("Hint: The password is /treasure");
+console.log("Hint: The password is /password");
